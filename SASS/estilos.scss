@@ -1,0 +1,118 @@
+body{
+    background: url(../Multimedia/pizzaback.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: rgb(253, 253, 253);
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100%;
+}
+header{
+    grid-area: header;
+    background-color: rgb(180, 127, 58);
+    text-decoration: none;
+    border: 1px solid;
+
+    .nav-link{
+        text-align: right;
+        text-decoration: none;
+        font-family:Arial, Helvetica, sans-serif;
+        color: rgb(255, 255, 255);
+        position: relative;
+        padding: 10px;
+    }
+    .nav-link a:hover{
+        color: rgb(0, 0, 0);
+    }
+}
+.promotion{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.596);
+}
+div.promotion-video{
+    border: 1.5px solid;
+    background:rgba(0, 0, 0, 0.692);
+    text-align: center;
+}
+.main{
+    grid-area: sidebar
+}
+footer{
+    grid-area: footer;
+    background-color: rgb(170, 107, 13);
+    color: white;
+    width: 100%;
+    text-align: center;
+    bottom: 0%;
+}
+.main{
+    grid-area: sidebar;
+    background-color: #ff851b69;
+    margin: left;
+}
+.opinion-producto{
+    background-color: rgba(0, 0, 0, 0.336);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.grid-container {
+    display: grid;
+    gap: 10px;
+    grid-template: 
+    "header" 100px
+    "navbar" 50px
+    "main" auto
+    "sidebar" 100px
+    "footer" 100px; 
+
+    .contenedor .form .form-header .form-title{
+        font-weight: normal;
+        font-family: sans-serif;
+        color:#ff851b
+    }
+    .contenedor .form .form-header .form-title span{
+        color:#fff;
+    }
+    .contenedor .form{
+        background: rgba(0, 0, 0, 0.6);
+        width: 98%;
+    }
+    .grid-container > *{
+        box-shadow: -1px 1px 7px 0px rgba(0, 0, 0, 0.75);
+        border-radius: 4px;
+        padding: 10px;
+        text-align: center;
+    }
+}
+
+@media (min-width: 600px) {
+    .grid-container {
+
+        grid-template: 
+        "header header" 100px 50px
+        "main" auto
+        "footer footer" 100px
+        200px auto;
+    }
+}
+@media (min-width: 900px) {
+    .grid-container {
+
+        grid-template: 
+        "header header header" 100px
+        "navbar main sidebar" auto
+        "footer footer footer" 100px;
+    }
+}
+@media screen and (max-width: 600px){
+    body{
+        background-image: url(./Multimedia/foto8.jpg);
+    }
+}
+
+@import url(SASS/estilos.css)

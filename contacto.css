@@ -1,0 +1,33 @@
+body{
+    background: url(../Multimedia/pizzaback.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    background-color: rgb(180, 127, 58);
+    text-decoration: none;
+    border: 1px solid;
+}
+
+.nav-link{
+    text-align: right;
+    text-decoration: none;
+    font-family:Arial, Helvetica, sans-serif;
+    color: rgb(255, 255, 255);
+    position: relative;
+    padding: 10px;
+}
+
+.nav-link a:hover{
+    color: black;
+}
+footer{
+    background-color: rgb(170, 107, 13);
+    color: white;
+    align-self: flex-end;
+    width: 100%;
+    text-align: center;
+}
